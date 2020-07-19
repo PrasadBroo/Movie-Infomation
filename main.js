@@ -42,7 +42,7 @@ async function loadMovies(){
 }
 
 async function getMovieData(movieName){
-    const res = await fetch(`http://www.omdbapi.com/?apikey=1a5ae6c4&s=${movieName}`);
+    const res = await fetch(`https://www.omdbapi.com/?apikey=1a5ae6c4&s=${movieName}`);
     const data = await res.json();
     return data;
 }

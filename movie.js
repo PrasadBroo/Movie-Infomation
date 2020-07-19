@@ -40,7 +40,7 @@ async function getMovieInfo(id){
 
 
 async function getMovie(id){
-    const res = await fetch('http://www.omdbapi.com/?apikey=1a5ae6c4&i='+id);
+    const res = await fetch('https://www.omdbapi.com/?apikey=1a5ae6c4&i='+id);
     const data = await res.json();
     return data;
 }
