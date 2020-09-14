@@ -18,7 +18,7 @@ async function loadMovies(){
     
 
     let html_to_go = data.Search.map(ele => {
-        if(ele.Poster == 'N/A'){ele.Poster = 'https://www.publicdomainpictures.net/pictures/280000/velka/not-found-image-15383864787lu.jpg'}
+        if(ele.Poster == 'N/A'){ele.Poster = 'https://i.ibb.co/0qtwsBm/image-not-found.jpg'}
         let hmm = `<div class="card m-2" style="width: 18rem;">
         <img class="card-img-top" src=${ele.Poster}>
         <div class="card-body">
